@@ -13,6 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+    <style>
+        .my-nav-btn:hover {
+            color: #000000;
+            font-size: 17px;
+            transition: 0.4s;
+        }
+
+        .my-card-img {
+            border-radius: 8%;
+        }
+
+        .my-card {
+            border-radius: 8%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light d-block d-sm-none">
@@ -27,7 +42,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link active" aria-current="page" href="graphic-design.html">Graphic Design</a>
+                    <a class="nav-link active" aria-current="page" href="multi-media.html">MultiMedia</a>
+                    <a class="nav-link active" aria-current="page" href="education.html">Education</a>
                     <a class="nav-link active" aria-current="page" href="mailto:kiki40619@gmail.com">Contact</a>
                 </li>
             </ul>
@@ -35,41 +51,47 @@
     </div>
 </nav>
 
-<div class="container border-bottom">
-    <div class="py-5 text-center">
-        <p class="fs-1" style="font-weight: bolder">SEIKI DESIGN</p>
-        <div class="d-none d-lg-block d-xl-block d-md-block ">
-            <header class="visible d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
+<div class="container" style="height: 15vh">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">SEIKI DESIGN | Graphic Design</span>
+        </a>
+        <div class="d-none d-lg-block d-xl-block d-md-block">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link link-secondary my-nav-btn"
+                                        aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="multi-media.html"
+                                        class="nav-link link-secondary my-nav-btn">MultiMedia</a></li>
 
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" role="button" class="nav-link px-2 link-secondary my-nav-btn">Home</a></li>
-                    <li><a href="multi-media.html" role="button" class="nav-link px-2 link-secondary my-nav-btn">MultiMedia</a></li>
-                    <li><a href="mailto:kiki40619@gmail.com" role="button" class="nav-link px-2 link-secondary my-nav-btn">Contact</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-
-                </div>
-            </header>
+                <li class="nav-item"><a href="education.html"
+                                        class="nav-link link-secondary my-nav-btn">Education</a></li>
+                <li class="nav-item"><a href="mailto:kiki40619@gmail.com" class="nav-link link-secondary my-nav-btn">Contact</a>
+                </li>
+            </ul>
         </div>
-        <img src="assets/gallery/img-text-1.png"class="img-fluid" alt="..."></div>
+    </header>
 </div>
 
-<div class="py-5 text-center ">
-    <!-- <p class="lead"></p> -->
+<div class="bd-example ">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item w-100" style=";height: 75vh"
+                src="https://www.youtube.com/embed/HfS53i47SN0?si=_6HoiWDQZvOENXfJ&autoplay=1"
+        ></iframe>
+    </div>
 </div>
-
+<div class="py-5 text-center " style="margin-top: 30px">
+    <p class="lead">部分作品因商業用途恕不提供展示</p>
+</div>
 <div class="album py-5 bg-light">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-01.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-01.png" class="img-fluid my-card-img"
+                         alt="...">
                     <div class="card-body">
                         <p class="card-text">2023 | 椪柑爆報 | 社群圖文創作</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -83,144 +105,153 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-02.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-02.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | 台鋼雄鷹隊徽設計｜入圍複賽</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-01.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-01.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-03.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-03.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | 池上國際漫城LOGO創意設計</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-02.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-02.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-04.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-04.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | 長庚科技大學中草藥研究中心</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-03.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-03.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-05.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-05.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | 花蓮縣原住民族聯合豐年節LOGO</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-04.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-04.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-06.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-06.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | 嘉南藥理大學妝品系形象LOGO｜第一名</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-05.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-05.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-07.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-07.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">云陽媒體股份有限公司|媒體行銷菁英營|最佳視覺獎</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-06.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-06.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-08.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-08.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">漂亮的阿頓美女來了 | 致敬Nefertiti海報</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-07.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-07.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-09.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-09.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2023 | Jstone原創T-shirt設計</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-08.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-08.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-10.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-10.png" class="img-fluid my-card-img" alt="...">
 
                     <div class="card-body">
                         <p class="card-text">第十屆黑潮原創設計｜入圍優秀作品</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="graphic-design-img-09.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="graphic-design-img-09.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
-                            <small class="text-muted"></small>          
+                            <small class="text-muted"></small>
                         </div>
                     </div>
                 </div>
@@ -228,6 +259,7 @@
         </div>
     </div>
 </div>
+
 
 </body>
 </html>

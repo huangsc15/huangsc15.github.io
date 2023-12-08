@@ -14,10 +14,16 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
     <style>
-        .my-nav-btn:hover{
+        .my-nav-btn:hover {
             color: #000000;
-            font-size: 20px;
+            font-size: 17px;
             transition: 0.4s;
+        }
+        .my-card-img {
+            border-radius: 8%;
+        }
+        .my-card{
+            border-radius: 8%;
         }
     </style>
 </head>
@@ -35,6 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     <a class="nav-link active" aria-current="page" href="graphic-design.html">Graphic Design</a>
+                    <a class="nav-link active" aria-current="page" href="education.html">Education</a>
                     <a class="nav-link active" aria-current="page" href="mailto:kiki40619@gmail.com">Contact</a>
                 </li>
             </ul>
@@ -42,32 +49,35 @@
     </div>
 </nav>
 
-<div class="container border-bottom">
-    <div class="py-5 text-center">
-        <p class="fs-1" style="font-weight: bolder">SEIKI DESIGN</p>
-        <div class="d-none d-lg-block d-xl-block d-md-block ">
-            <header class="visible d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 ">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                </a>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="index.html" role="button" class="nav-link px-2 link-secondary my-nav-btn">Home</a></li>
-                    <li><a href="graphic-design.html" role="button" class="nav-link px-2 link-secondary my-nav-btn">Graphic Design</a></li>
-                    <li><a href="mailto:kiki40619@gmail.com" role="button" class="nav-link px-2 link-secondary my-nav-btn">Contact</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-
-                </div>
-            </header>
+<div class="container" style="height: 15vh">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">SEIKI DESIGN | MultiMedia</span>
+        </a>
+        <div class="d-none d-lg-block d-xl-block d-md-block">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link link-secondary my-nav-btn" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item"><a href="graphic-design.html" class="nav-link link-secondary my-nav-btn">Graphic Design</a>
+                </li>
+                <li class="nav-item"><a href="education.html" class="nav-link link-secondary my-nav-btn">Education</a>
+                </li>
+                <li class="nav-item"><a href="mailto:kiki40619@gmail.com" class="nav-link link-secondary my-nav-btn">Contact</a>
+                </li>
+            </ul>
         </div>
-        <img src="assets/gallery/img-text-1.png"class="img-fluid" alt="..."></div>
+    </header>
+</div>
+<div class="bd-example ">
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item w-100" style="height: 75vh"
+                src="https://www.youtube.com/embed/HfS53i47SN0?si=_6HoiWDQZvOENXfJ"
+        ></iframe>
     </div>
-
-
+</div>
 <div class="py-5 text-center ">
     <!-- <p class="lead"></p> -->
 </div>
@@ -75,8 +85,8 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-11.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-11.png" class="img-fluid my-card-img " alt="...">
                     <div class="card-body">
                         <p class="card-text">AR雙封面書籍設計｜《界限》｜MirrorAmor</p>
                         <div class="d-flex justify-content-between align-items-center">
@@ -90,14 +100,15 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-12.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-12.png" class="img-fluid my-card-img " alt="...">
 
                     <div class="card-body">
                         <p class="card-text">UI design | 踩市場APP手機介面設計</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="multi-media-img-11.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="multi-media-img-11.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
                             <small class="text-muted"></small>
                         </div>
@@ -106,14 +117,15 @@
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-13.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-13.png" class="img-fluid my-card-img " alt="...">
 
                     <div class="card-body">
                         <p class="card-text">2020|第二屆Vtuber亞洲黑客松｜特別賞</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="multi-media-img-12.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="multi-media-img-12.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
                             <small class="text-muted"></small>
                         </div>
@@ -122,14 +134,15 @@
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-14.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-14.png" class="img-fluid my-card-img " alt="...">
 
                     <div class="card-body">
                         <p class="card-text">遊戲影片|火炬之光S3【賓】迸發電球</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="multi-media-img-13.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="multi-media-img-13.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
                             <small class="text-muted"></small>
                         </div>
@@ -138,14 +151,15 @@
             </div>
 
             <div class="col">
-                <div class="card shadow-sm">
-                    <img src="assets/gallery/img-15.png" class="img-fluid" alt="...">
+                <div class="card shadow-sm my-card">
+                    <img src="assets/gallery/img-15.png" class="img-fluid my-card-img " alt="...">
 
                     <div class="card-body">
                         <p class="card-text">3D MAYA 建模 | 吉祥物設計</p>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <a href="multi-media-img-14.html" type="button" class="btn btn-sm btn-outline-secondary">View</a>
+                                <a href="multi-media-img-14.html" type="button"
+                                   class="btn btn-sm btn-outline-secondary">View</a>
                             </div>
                             <small class="text-muted"></small>
                         </div>
