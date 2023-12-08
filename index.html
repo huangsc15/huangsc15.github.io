@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Seiki Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+    <script src="js/animation.js" defer></script>
+    <script src="js/color.mode.js" defer></script>
+    <script src="js/project-slideshow.js" defer></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/color.mode.css"/>
+</head>
+<body>
+<div id="hero">
+    <h5>Hello I'm</h5>
+    <h1>SEIKI HUANG</h1>
+    <p>Graphic Designer</p>
+    <!--Block,Element, Modifier(BEM)naming convention -->
+    <div id="hero__animation">
+        <div id="hero__animation__img"></div>
+    </div>
+</div>
+<nav class="grid">
+    <div id="grid__tl">
+        <div id="grid__tl__btn">About</div>
+        <div id="grid__tl__content">
+            <div class="cards">
+                <div class="cards__content">
+                    <article>
+                        <img
+                                src="./assets/icons/experience.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <h2>基本資料</h2>
+                        <p>黃聖琪 SEIKI<br/>
+                            0979-564-386<br/>
+                            kiki40619@gmail.com</p>
+                    </article>
+                    <p class="cards__content__text">
+                        我熱衷於平面設計以及教育領域的知識學習，熟悉PS、AI，跟持續精進網頁設計和MAYA等建模軟體。<br/>
+                        是一位自由接案者也是一位電腦繪圖教師。
+                    </p>
+                </div>
+                <div class="cards__content">
+                    <article>
+                        <img
+                                src="./assets/icons/education.png"
+                                alt="Education icon"
+                                class="icon"
+                        />
+                        <h2>求學經歷</h2>
+                        <p><b>｜國立台灣師範大學｜</b><br/>圖文傳播學系碩士<br/>
+                            <b>｜中國文化大學｜</b><br/>大眾傳播學系學士<br/>
+                            <b>｜天主教振聲高級中學｜</b><br/>多媒體設計科</p>
+                    </article>
+                    <p class="cards__content__text">
+                        專業技能：<br>
+                        Adobe Illustrator 95% <br/>
+                        Adobe Photoshop 95% <br/>
+                        Adobe After Effects 70% <br/>
+                        Adobe Premiere Pro 70% <br/>
+                        HTML | CSS 40% <br/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="grid">
+    <div id="grid__tr">
+        <div id="grid__tr__btn">Experience</div>
+        <div id="grid__tr__content">
+            <div class="cards experience">
+                <article class="experience__skill">
+                    <h2>2023</h2>
+                    <div>
+                        <img
+                                src="./assets/icons/checkmark.png"
+                                alt="checkmark icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h2>郭台銘選舉連署廣告文宣設計編排｜產業類型：選舉宣傳</h2>
+                        </div>
+                        <div>
+                            <h2>桃園國際機場行李秤重檯圖文設計｜產業類型：航空業</h2>
+                        </div>
+                        <div>
+                            <h2>台灣梨山茶茶葉包裝設計｜產業類型：茶產業</h2>
+                        </div>
+                        <div>
+                            <h2>嘉南藥理大學妝品系形象LOGO設計 | 第一名</h2>
+                        </div>
+                        <div>
+                            <h2>台鋼雄鷹隊徽徵選競賽 | 入圍複賽 </h2>
+                        </div>
+                        <div>
+                            <h2>實踐大學招生用易拉展設計｜產業類型：教育業</h2>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="experience__skill">
+                    <h2>Before 2023</h2>
+                    <div>
+                        <img
+                                src="./assets/icons/checkmark.png"
+                                alt="checkmark icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h2>財團法人公共電視文化事業基金會｜學位論文贊助</h2>
+                        </div>
+                        <div>
+                            <h2>國際虛擬人技術論壇暨亞洲黑客松創作大賽| Vtuber特別賞 </h2>
+                        </div>
+                        <div>
+                            <h2>動腦創意數位行銷培訓營 | 最佳創意獎｜專案：蒸眼說瞎話</h2>
+                            </h2>
+                        </div>
+                        <div>
+                            <h2>公共電視 | 青少年創意表演營、卡通動畫營｜隊輔 </h2>
+                        </div>
+                        <div>
+                            <h2>A-Mis複合式沙龍視覺設計 | 產業類型：美髮產業 </h2>
+                        </div>
+                        <div>
+                            <h2>社團法人新竹市聲暉協會印刷品設計｜產業類型：非營利組織 </h2>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="grid">
+    <div id="grid__bl">
+        <div id="grid__bl__btn">Portfolio</div>
+        <div id="grid__bl__content">
+            <div id="grid__bl__content__projects">
+                <div class="project p-1" style="display: flex;">
+                    <img
+                            class="project__img project-1"
+                            src="assets/portfolio-projects/project-1-dark.png"
+                            alt="Project 1">
+                    <h2 class="project__title">平面設計作品</h2>
+                    <button
+                            class="btn"
+                            onclick="window.location.href='graphic-design.html'"
+                    >C L I C K
+                    </button>
+                </div>
+                <div class="project p-2" style="display: none;">
+                    <img
+                            class="project__img project-2"
+                            src="assets/portfolio-projects/project-2-dark.png"
+                            alt="Project 2">
+                    <h2 class="project__title">多媒體設計作品</h2>
+                    <button class="btn"
+                            onclick="window.location.href='multi-media.html'"
+                    >C L I C K
+                    </button>
+                </div>
+                <div class="project p-3" style="display: none;">
+                    <img
+                            class="project__img project-3"
+                            src="assets/portfolio-projects/project-3-dark.png"
+                            alt="Project 3">
+                    <h2 class="project__title">設計家教服務</h2>
+                    <button class="btn"
+                            onclick="window.location.href='http://netlify.com'"
+                    >C L I C K
+                    </button>
+                </div>
+                <button class="arrow" onclick="navigateProject(-1)">
+                    &#10094;
+                </button>
+                <button class="arrow" onclick="navigateProject(1)">
+                    &#10095;
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="grid">
+    <div id="grid__br">
+        <div id="grid__br__btn">Contact</div>
+        <div id="grid__br__content">
+            <h2 class="contact-text">Contact Seiki</h2>
+            <div>
+                <button
+                        class="btn btn-contact"
+                        onclick="window.location.href='mailto:kiki40619@gmail.com'"
+                >
+                    Email
+                    <button
+                            class="btn btn-contact"
+                            onclick="window.location.href='https://shope.ee/20VKeoFNhN'"
+                    >Store
+                    </button>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+<div id="color-mode">
+    <div id="toggle-button" class="icon"></div>
+</div>
+</body>
+</html>
